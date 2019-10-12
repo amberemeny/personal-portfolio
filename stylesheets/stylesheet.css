@@ -247,8 +247,8 @@ body {
 }
 
 body #first-div {
-  background-color: blue;
-  margin-top: 10px;
+  margin-top: 20px;
+  height: 600px;
 }
 
 body #first-div h1 {
