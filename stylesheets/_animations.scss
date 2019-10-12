@@ -1,0 +1,17 @@
+@keyframes blinker {
+    1% {
+        opacity: 1;
+    }
+    2% {
+        opacity: 0;
+    }
+    4% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    31% {
+        opacity: 1;
+    }
+  }

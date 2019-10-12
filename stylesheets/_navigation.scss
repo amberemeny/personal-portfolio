@@ -1,7 +1,4 @@
-@font-face {
-    font-family: "Neon";
-    src: url("../fonts/beon-webfont.woff") format("woff2"),
-  }
+@import 'global-styles', 'animations';
 
 body {
     margin: 0px;
@@ -11,7 +8,7 @@ body {
         display: flex;
         flex-direction: column;
         background-color: rgb(0, 0, 0);
-        background-image: url(../images/header-image3.png);
+        background-image: url(../images/header-image5.png);
         background-size: cover;
         background-position-y: bottom;
         color: white;
@@ -36,7 +33,7 @@ body {
                     top: 25px;
                     left: 0;
                     display: block;
-                    background: rgb(238, 53, 255);
+                    background: rgb(53, 242, 255);
                     transition: .5s;
                     box-shadow: 2px 1px 2px rgb(255, 0, 0), -2px -1px 2px rgb(0, 26, 255), inset 1px 1px 1px rgba(255, 255, 255, 0.555);
                 }
@@ -82,7 +79,7 @@ body {
                 transition: .3s;
                 transition-delay: 0s;
                 overflow: hidden;
-                box-shadow: 0px 2px 3px rgb(255, 0, 0), 0px 3px 3px rgb(0, 26, 255);
+                box-shadow: 0px 2px 3px rgb(255, 0, 140), 0px 3px 5px rgb(0, 26, 255);
 
                 >ul {
                     background-color: transparent;
@@ -104,6 +101,7 @@ body {
                             background-color: rgba(0, 0, 0, 0.5);
                             text-decoration: none;
                             text-transform: uppercase;
+                            letter-spacing: 3px;
                             color: white;
                             font-weight: 700;
                             font-size: 1.5em;
@@ -111,7 +109,7 @@ body {
                             display: block;
                             padding: 23px;
                             &:hover {
-                                text-shadow: 2px 2px 3px magenta, -2px -2px 3px cyan, 0px 0px 5px black;
+                                text-shadow: 2px 2px 4px magenta, -2px -2px 4px cyan, 0px 0px 5px black;
                             }
                         }
                     }
@@ -139,9 +137,10 @@ body {
             margin-top: 50px;
             height: 200px;
             font-family: 'Neon', sans-serif;
+            box-shadow: 0px 2px 3px rgb(255, 0, 140), 0px 3px 5px rgb(0, 26, 255);
             #coder-title {
                 margin-top: -20px;
-                color: rgb(255, 238, 0);
+                color: rgb(82, 255, 66);
                 text-transform: uppercase;
                 
                 font-size: 1.5em;
@@ -149,9 +148,9 @@ body {
                 text-shadow: 1px 1px 2px magenta, -1px -1px 2px cyan, 0px 0px 5px black;
             }
             #name-title {
-                color: rgb(0, 255, 42);
+                color: rgb(217, 255, 0);
                 font-size: 2.7em;
-                text-shadow: 1px 2px 3px magenta, -1px -2px 3px cyan, 0px 0px 5px black;
+                text-shadow: 1px 2px 3px rgb(225, 0, 255), -1px -2px 3px cyan, 0px 0px 5px black;
                 animation: blinker 1s cubic-bezier(.5, 0, 1, 1) alternate-reverse; 
                 animation-iteration-count: 3;
                 animation-delay: 1s;
@@ -161,20 +160,3 @@ body {
     }
 }
 
-@keyframes blinker {
-    1% {
-        opacity: 1;
-    }
-    2% {
-        opacity: 0;
-    }
-    4% {
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-    31% {
-        opacity: 1;
-    }
-  }
